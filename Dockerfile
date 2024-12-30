@@ -3,5 +3,5 @@ RUN         dnf install nginx sudo -y
 RUN         rm -rf /usr/share/nginx/html/*
 COPY        ./html/ /usr/share/nginx/html/.
 COPY        nginx.conf /etc/nginx/nginx.conf
-ENTRYPOINT  ["nginx", "-g"]
-EXPOSE      80 
+ENTRYPOINT  ["nginx", "-g", "daemon off;"]
+EXPOSE      80
