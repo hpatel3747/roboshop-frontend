@@ -15,8 +15,8 @@ jobs:
     uses: hpatel3747/reusable-workflows/.github/workflows/ci-dev-branch.yaml@main
 
 
-#when calling a workflow 'with:' provides map of inputs that are passed to the called workflow
-#to test dev branch, first checkout this file in new branch "main-fe", make changes, and push - which should trigger the workflow
+# when calling a workflow 'with:' provides map of inputs that are passed to the called workflow
+# to test dev branch, first checkout this file in new branch "main-fe", make changes, and push - which should trigger the workflow
 # then merge the main-fe changes in the main branch, to do so checkout to main branch and do "git merge main-fe", then you need to push the
 # changes in main branch to github by "git push origin main"
 # Following are the steps:
