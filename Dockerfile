@@ -1,4 +1,4 @@
-FROM        redhat/ubi9
+FROM        docker.io/redhat/ubi9
 RUN         dnf install nginx sudo -y
 RUN         rm -rf /usr/share/nginx/html/*
 COPY        ./html/ /usr/share/nginx/html/.
